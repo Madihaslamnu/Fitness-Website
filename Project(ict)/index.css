@@ -1,0 +1,97 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.19) 0 100%), url(Assets/inderx_background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header {
+  min-height: 15vh;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(125, 123, 123, 0.439);
+}
+
+#logo-link {
+  text-align: left;
+}
+
+#logo {
+  height: 170px;
+  width: 170px; 
+  
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0px;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 9px 16px;
+  position: relative; 
+
+}
+
+ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+ul li::after{
+  content: '';
+  width: 0%;
+  height: 5px;
+  background:black;
+  display: block;
+  transition: 0.5s;
+}
+
+ul li:hover::after{
+  width: 100%;
+}
+section {
+  padding: 130px;
+}
+
+footer {
+  background: rgba(91, 87, 87, 0.54);
+  color: #101010;
+  font-weight: 800;
+  text-align: center;
+  padding: 1em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+h1 {
+  color: #111010;
+  font-size: 70px;
+  margin-bottom: 1rem;
+  font-style: oblique;
+  font-family: system-ui;
+  margin-right: 600px;
+  margin-top: 15px;
+}
+
+.sub-heading {
+  font-size: 40px;
+  color: #211f1f;
+  margin: 0;
+  margin-right: 600px;
+}
+
+

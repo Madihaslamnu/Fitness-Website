@@ -1,0 +1,119 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    background-image: linear-gradient(to right, rgba(255,255,255, 0.3) 0 100%), url(Assets/blog_page_background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  header {
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(122, 119, 119, 0.864);
+  }
+  
+  #logo-link {
+    text-align: left;
+  }
+  
+  #logo {
+    height: 170px;
+    width: 170px; 
+    
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0px;
+  }
+  
+  ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 9px 16px;
+    position: relative; 
+  
+  }
+  
+  ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+  }
+  
+  ul li::after{
+    content: '';
+    width: 0%;
+    height: 5px;
+    background:black;
+    display: block;
+    transition: 0.5s;
+  }
+  
+  ul li:hover::after{
+    width: 100%;
+  }
+  section {
+    padding: 130px;
+  }
+  
+  footer {
+    background: rgba(121, 119, 119, 0.981);
+    color: #333;
+    font-weight: 800;
+    text-align: center;
+    padding: 1em;
+    margin-top: 30px;
+    width: 100%;
+  }
+  h1{
+    text-align: center;
+    font-size: 80px;
+    font-weight: 800;
+    font-style: oblique;
+  }
+  main{
+    max-width: 100vw;
+    max-height: fit-content;
+  }
+  article {
+    margin-bottom: 30px;
+    background-color: rgba(184, 178, 178, 0.687);
+    width: 400px;
+    height: 650px;
+    margin: 15px;
+    padding: 50px;
+    box-shadow: black;
+    align-content: center;
+    font-size: 22px;
+    border-radius: 20px;
+  }
+
+h2 {
+    color: #333;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+img {
+    width: 400px;
+    height: 300px;
+    margin-right: 15px;
+    border-radius: 20px;
+    
+}
+.article-container{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  box-shadow: black;
+  
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Assets/logo.jpg">
+  <link rel="shortcut icon" href="Assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="contact_style.css">
+  <title>Contact Page</title>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+
+<script>
+  function sendEmail() {
+    (function () {
+      emailjs.init("b6cK7ZuywiDgsO4XH");
+    })();
+    var params = {
+      sendername: document.querySelector("#sendername").value,
+      senderEmail: document.querySelector("#senderEmail").value,
+      subject: document.querySelector("#subject").value,
+      message: document.querySelector("#message").value,
+      to: "k230846@nu.edu.pk",
+      from: document.querySelector("#senderEmail").value,
+    };
+    var serviceID = "service_wklz7o2";
+    var templateID = "template_furtgaj";
+
+    emailjs.send(serviceID, templateID, params)
+      .then((res) => {
+        alert("Email Sent Successfully!");
+      })
+      .catch((error) => {
+        console.error('Error sending email.', error);
+      });
+  }
+</script>
+
+
+
+
+<body class="container">
+  <header>
+    <a href="Index.html" id="logo-link">
+      <img src="Assets/logo.png" alt="Your Fitness Tracker" id="logo">
+    </a>
+    <ul>
+      <li><a href="index.html"><b>Home</a></b></li>
+      <li><a href="Food_tracker.html"><b>Food Tracker</b></a></li>
+      <li><a href="calorie_tracker.html"><b>Calorie tracker</b></a></li>
+      <li><a href="blog.html"><b>Blog</b></a></li>
+      <li><a href="BMI.html"><b>BMI</b></a></li>
+      <li><a href="contact.html"><b>Contact</b></a></li>
+
+    </ul>
+  </header>
+
+
+  <div container1>
+    <form >
+    <h1>GET IN TOUCH</h1>
+    <input type="text" id="sendername" placeholder="Sender Name"><br>
+    <input type="text" id="senderEmail" placeholder="Your Email"><br>
+    <input type="text" id="subject" placeholder="subject"><br>
+    <br>
+    <textarea id="message" cols="10" rows="4" placeholder=" Message"></textarea> <br>
+    <button onclick="sendEmail();">Send</button>
+  </form>
+  </div>
+
+
+  <footer>
+    <p>&copy; 2023 Your Fitness Tracker. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>

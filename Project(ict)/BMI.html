@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Fitness Tracker</title>
+  <link rel="stylesheet" href="BMI.css">
+  <link rel="stylesheet" href="Assets/logo.jpg">
+  <link rel="shortcut icon" href="Assets/favicon.ico" type="image/x-icon">
+  <script src="script.js" defer></script>
+</head>
+
+<body class="container">
+  <header>
+    <a href="Index.html" id="logo-link">
+      <img src="Assets/logo.png" alt="Your Fitness Tracker" id="logo">
+    </a>
+    <ul>
+      <li><a href="index.html"><b>Home</a></b></li>
+      <li><a href="Food_tracker.html"><b>Food Tracker</b></a></li>
+      <li><a href="calorie_tracker.html"><b>Calorie tracker</b></a></li>
+      <li><a href="blog.html"><b>Blog</b></a></li>
+      <li><a href="BMI.html"><b>BMI</b></a></li>
+      <li><a href="contact.html"><b>Contact</b></a></li>
+
+    </ul>
+  </header>
+  <div class="container1">
+      <h1>BMI Calculator</h1>
+        <input type="number" id="weight" placeholder="weight(in kgs)" ><br><span id="weight_error"></span>
+        <input type="number" id="height" placeholder="Height(in meters)" ><br><span id="height_error"></span>
+        <button id="btn">Calculate</button>
+       <p id="output"></p>
+  </div>
+
+    <script src="script2.js"></script>
+    </section>
+
+  <footer>
+    <p>&copy; 2023 Your Fitness Tracker. All rights reserved.</p>
+  </footer>
+</body>
+</html>
